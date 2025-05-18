@@ -51,7 +51,9 @@ const Signup = () => {
       if (signUpAttempt.status === 'complete') {
         await setActive({ session: signUpAttempt.createdSessionId });
         setVerification({ ...verification, state: 'success' });
-      } else {
+        setshowSuccessModal(true); // ✅ show success modal
+      }
+      else {
         setVerification({ ...verification, state: 'failed', error: 'Verification failed' });
       }
     } catch (err: any) {
@@ -157,7 +159,7 @@ const Signup = () => {
 
 
       <Modal isVisible={verification.state === 'pending'}
-        onModalHide={() => verification.state==="success"?setshowSuccessModal(true):setshowSuccessModal(false)}
+        onModalHide={() => { if (verification.state === "success") { setshowSuccessModal(true) } }}
       >
         <View className="bg-white px-7 py-9 rounded-2xl min-h-[300px]">
           <Text className='text-2xl font-JakartaBold mb-2'>
