@@ -40,7 +40,7 @@ const Sigin = () => {
 
 
   return (
-    <View className="flex-1 bg-white">
+    <View className="flex-1 bg-white mb-10">
       <ScrollView className="flex-1">
         {/* Header Image */}
         <View className="relative w-full h-[250px]">

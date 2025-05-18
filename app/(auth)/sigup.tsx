@@ -67,7 +67,7 @@ const Signup = () => {
   };
 
   return (
-    <View className="flex-1 bg-white">
+    <View className="flex-1 bg-white mb-10">
       {verification.state === 'pending' ? (
         <View className="flex-1 justify-center items-center px-6 bg-white">
           <Text className="text-2xl font-semibold mb-4 text-center">Verify Your Email</Text>

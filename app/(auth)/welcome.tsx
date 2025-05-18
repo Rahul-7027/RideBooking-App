@@ -11,7 +11,7 @@ const Welcome = () => {
   const isLastPage = activeIndex === onboarding.length - 1;
 
   return (
-    <View className="flex-1 bg-white pt-12 px-6 justify-between">
+    <View className="flex-1 bg-white pt-12 px-6 justify-between mb-8">
       {/* Skip button */}
       <View className="flex items-end">
         <TouchableOpacity onPress={() => router.replace('/(auth)/sigup')}>
