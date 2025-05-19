@@ -174,7 +174,7 @@ export default function Page() {
               <>
               <Text className='text-xl font-JakartaBold mt-5 mb-3'>Recent Rides</Text>
               <View className='flex flex-row items-center bg-transparent h-[300px]'>
-                <Map />
+
               </View>
             </>
           </>
